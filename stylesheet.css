@@ -1,0 +1,98 @@
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Inter', sans-serif; */
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+body h1 {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.frame {
+  height: 400px;
+  width: 400px;
+}
+
+.square {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square div {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background: url("sprite.png") center center / cover no-repeat;
+  image-rendering: pixelated;
+  border-radius: 10px;
+}
+
+.square1 {
+  border: 1px solid red;
+  animation: squareRotation 5s linear 0.2s alternate infinite;
+  opacity: 0.7;
+}
+.square2 {
+  border: 1px solid red;
+  animation: squareRotation 5s linear 0.4s alternate infinite;
+  opacity: 0.6;
+}
+.square3 {
+  border: 1px solid red;
+  animation: squareRotation 5s linear 0.6s alternate infinite;
+  opacity: 0.5;
+}
+.square4 {
+  border: 1px solid red;
+  animation: squareRotation 5s linear 0.8s alternate infinite;
+  opacity: 0.4;
+}
+.square5 {
+  border: 1px solid red;
+  animation: squareRotation 5s linear 1s alternate infinite;
+  opacity: 0.3;
+}
+.square6 {
+  border: 1px solid red;
+  animation: squareRotation 5s linear 1.2s alternate infinite;
+  opacity: 0.2;
+}
+
+@keyframes squareRotation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+.textsInfo {
+  padding: 1rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.textsInfo p {
+  text-align: center;
+}
+
+.textsInfo h1 {
+  color: #f0db4f;
+}
